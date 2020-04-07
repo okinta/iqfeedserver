@@ -1,0 +1,6 @@
+**/.dockerignore
+**/.DS_Store
+**/.gitignore
+**/.pytest_cache
+**/__pycache__
+.git

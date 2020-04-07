@@ -1,0 +1,14 @@
+version: "3"
+services:
+
+  iqfeedserver:
+    image: okinta/iqfeedserver
+    build:
+      context: ./
+      dockerfile: containers/iqfeedserver/Dockerfile
+
+  tests:
+    image: iqfeedserver-tests
+    build:
+      context: ./
+      dockerfile: containers/tests/Dockerfile
