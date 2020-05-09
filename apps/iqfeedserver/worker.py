@@ -65,7 +65,8 @@ async def process_job(ticker: str, date: str) -> List[str]:
             ) % {
                 "request_id": "B-%s-0060-s" % ticker,
                 "ticker": ticker,
-                "date_time": datetime.datetime.combine(bar.date, bar.time),
+                "date_time": format_datetime(
+                    datetime.datetime.combine(bar.date, bar.time)),
                 "open": bar.open_p,
                 "high": bar.high_p,
                 "low": bar.low_p,
