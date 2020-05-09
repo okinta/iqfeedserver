@@ -6,7 +6,8 @@ Mock IQFeed server that can turn historical data into live data.
 
 ### Building
 
-    docker-compose build
+    docker build -t okinta/iqfeedserver -f containers/iqfeedserver/Dockerfile . \
+        && docker build -t iqfeedserver-tests -f containers/tests/Dockerfile .
 
 ### Validate Syntax
 
